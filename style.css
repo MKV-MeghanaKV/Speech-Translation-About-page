@@ -26,6 +26,7 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
+
 .nav{
     position: fixed;
 }
@@ -60,7 +61,7 @@ header1 div .block
 .white1 ul li a{
     color:black;
 }
-.content{
+.content4{
     max-width: 1250px;
     margin: auto;
     padding: 0 30px;
@@ -158,6 +159,73 @@ nav ul li a{
   background-position: center;
   background-attachment: fixed;
 }
+.content1{
+  padding-left:30px ;
+  padding-right: 30px;
+  font-size: 20px;
+  margin:0;
+}
+
+
+.content2{
+padding-left:30px ;
+padding-right: 30px;
+font-size: 20px;
+margin:0;
+}
+
+
+.middle{
+  padding-left: 350px;
+  padding-right: 350px;
+  font-family: Rowdies;
+  letter-spacing:1.5px;
+  font-size: 25px;
+}
+
+.middle p{
+ font-size: 30px;
+}
+
+.middle1{
+padding-left: 350px;
+padding-right: 350px;
+font-family: Rowdies;
+letter-spacing:1.5px;
+font-size: 25px;
+}
+
+.middle2{
+padding-left: 350px;
+padding-right: 350px;
+font-family: Rowdies;
+letter-spacing:1.5px;
+font-size: 25px;
+}
+
+.middle3{
+padding-left: 350px;
+padding-right: 350px;
+font-family: Rowdies;
+letter-spacing:1.5px;
+font-size: 25px;
+text-align: justify;
+
+}
+p{
+  font-family: Roboto;
+  letter-spacing: 1px;
+  font-weight: medium;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.methods{
+  padding-left: 350px;
+  padding-right: 350px;
+  background-color: rgb(255, 244, 226);
+  font-size: 25px;
+}
 .about{
   padding: 30px 0;
 }
@@ -185,10 +253,21 @@ nav ul li a{
   .content{
     padding: 0 60px;
   }
+  .p{
+    font-size: x-large;
+  }
 }
 @media (max-width: 1100px) {
   .content{
     padding: 0 40px;
+  }
+  .middle{
+    padding-left: 150px;
+    padding-right: 100px;
+  }
+  .methods{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 @media (max-width: 900px) {
@@ -200,8 +279,19 @@ nav ul li a{
   body.disabled{
     overflow: hidden;
   }
+  p{
+    font-size: larger;
+  }
  .navbar{
     padding-top: 35px;
+ }
+ .middle1{
+  padding-left: 100px;
+  padding-right: 100px;
+ }
+ .middle2{
+  padding-left: 100px;
+  padding-right: 100px;
  }
   .icon{
     display: block;
@@ -254,6 +344,14 @@ nav ul li a{
     color: #6bafe3;
   } 
 
+}
+@media (max-width: 593px) {
+  p{
+    font-size: large;
+  }
+  span{
+    font-size: 30px;
+  }
 }
 @media (max-width: 380px) {
   .navbar .logo a{

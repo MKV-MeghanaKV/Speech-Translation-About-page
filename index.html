@@ -41,16 +41,146 @@
  </header>
   <br>
   <br>
-  <div class="about">
-    <div class="content">
-      <div class="title">Responsive Sticky Navigation Menu Bar on Scroll using HTML CSS & JavaScript</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam eligendi esse provident eos enim doloremque blanditiis aut placeat veniam, libero nostrum quae. Ipsam, iste reprehenderit minima accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a mollitia sit tenetur.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque perspiciatis voluptate ducimus reiciendis rem expedita voluptatibus dicta harum, quo, aspernatur maiores possimus officia quod? Aliquid molestiae illo sequi, tempora perferendis at incidunt nam porro voluptatibus, iste aperiam blanditiis adipisci ducimus repellendus distinctio nostrum ipsum! Voluptas facilis cum, atque tempora magnam beatae sequi! Doloribus expedita, cupiditate quo quod nemo aliquam, mollitia cum ea nam ullam soluta temporibus! Repudiandae incidunt consequatur distinctio deleniti obcaecati sit facilis unde, quisquam veniam ad doloribus!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam error deleniti cum beatae non assumenda illum est dolores, possimus suscipit quibusdam eveniet id fuga dolore unde modi, sapiente voluptas. Mollitia veritatis explicabo cumque enim quia voluptates provident totam perferendis excepturi animi assumenda optio minus laudantium eveniet possimus amet blanditiis dolore in fuga atque, earum officia tempora quam similique est.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor rem! Doloribus, eaque odit voluptatem iste laboriosam provident facere quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa tempora facere in atque nesciunt, magni est aliquid unde soluta optio! Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem. Facilis suscipit corporis unde aut minima nihil, eum molestias itaque, tenetur, beatae ipsa at!</p>
+  <main class="content4">
+    <div class="content1">
+    <br>
+    <hr>
     </div>
-  </div>
+    
+     <div class="content1">
+       <p>March 1,2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-size:40px;'>Speech AI&#8595;</span></p>
+    
+      </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="middle">
+      <h2>What Speech AI do?</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="middle">
+      <p>
+        Speech-to-speech translation to other language with preserved voice characteristics found in the source voice throught the translation.
+      </p>
+    </div>
+    <br>
+    <div class="middle">
+        <p>
+          We are excited to introduce SpeechAI to get users’ feedback and learn about its strengths and weaknesses. Try it now at coolspeech.in.
+        </p> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="methods">
+      <br>
+      <br>
+          <h2>
+            Methods
+          </h2>
+          <br>
+          <br>
+          <br>
+          <p>Methods followed for Speech translation from one language to another are, at first the audio
+            input from the user is taken and then it is converted into .wav format and then processes the
+            audio to a particular frequency range of 22050 Hz. After setting the audio to a particular
+            frequency the multiple channel audio is converted into single channel, then the audio file is
+            divided into smaller chunks and speech present in each chunk is converted into text. Later it
+            is fed to a Tacotron 2 model which is a architecture for text-to-speech synthesis which
+            consists of an encoder and decoder network. It includes a mel spectrogram prediction
+            network, which generates a mel spectrogram which have a ability to generate high quality
+            speech that is difficult to distinguish from human speech. Finally the translated audio will be
+            stored in S3 bucket which allows the user to store and retrieve any amount of data.</p>
+            <br>
+            <img src="melspec.jfif">
+            <br>
+            <br>
+            <br>
+            <h3>Using Mel-spectrogram for feature extraction</h3>
+            <br>
+            <br>
+            <br>
+            <p>A Mel-spectrogram is a visual representation of the spectral content of a signal as a function
+              of time and frequency, with frequency on the y-axis and time on the x-axis as shown in figure
+              .It is computed by applying a Short-Time Fourier Transform (STFT) to a signal, and then
+              mapping the resulting spectral power to the mel scale, which is a nonlinear scale that more
+              closely approximates the human perception of pitch.
+              Mel-spectrograms are commonly used for feature extraction in the field of speech and music
+              processing. They can be used to extract features for tasks such as speech recognition, music
+              classification, and speaker identification.</p>
+              <br>
+              <br>
+              <p>To compute a mel spectrogram the following steps are followed and also represented in below figure.</p><br>
+                
+               <p> 1. Pre-process the signal: This may include applying some filtering or denoising
+                techniques to the signal to remove unwanted noise or reduce the bandwidth of the 
+                signal.<br><br>
+                2. Compute the STFT of the signal: This involves dividing the signal into overlapping 
+                frames and applying the Fast Fourier Transform (FFT) to each frame to obtain the 
+                spectral content of the signal at that time.<br><br>
+                3. Map the spectral power to the mel scale: This involves applying a mel-frequency 
+                warping function to the power spectrum obtained from the STFT to obtain a 
+                frequency scale that more closely approximates the human perception of pitch.<br><br>
+                4.Compute the log power spectrogram: The mel spectrogram is typically computed as 
+                the log power of the mel-scaled spectral content. This is done by taking the logarithm 
+                of the spectral power in each mel-scaled frequency bin.<br><br>
+                5. Display the mel spectrogram: The resulting mel spectrogram can be visualized as a 
+                2D image, with time on the x-axis and frequency on the y-axis. The intensity of each 
+                pixel in the image represents the log power of the signal at that time and frequency.</p>
+                <br>
+                <img src="melspecanalysis.jfif">
+                <br>
+                <br>
+                <br>
+    </div>
+    <br>
+    <br>
+    <div class="content1">
+      <br>
+      <hr>
+      </div>
+    <br>
+    <br>
+    <div class="middle1">
+      <h2>System Design</h2>
+      <br>
+      <br>
+      <br>
+      <img src="Sys.jpeg">
+      <br>
+      <br>
+    
+    </div>
+    <div class="content1">
+      <br>
+      <hr>
+      </div>
+    <div class="middle2">
+      <br>
+      <br>
+      <h2>Applications</h2>
+      <br>
+      <br>
+      
+      <ul>
+        <li>E-Learning</li>
+        <li>Language Translator</li>
+        <li>Chat bots</li>
+        <li>Voice Assistants</li>
+        <li>Movie Dubbing</li>
+        
+      </ul>
+    </div>
+  </main>
+
   <script>
     const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
@@ -129,7 +259,7 @@ function consoleText(words, id, colors) {
       visible = true;
     }
   }, 400)
-}
+ }
 
 
   </script>
